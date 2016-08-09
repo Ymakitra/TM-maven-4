@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by okurchyk on 8/9/2016.
- */
 public class Main {
   private static final String path = "C:\\Users\\okurchyk\\Desktop\\TM-maven-4-master\\src\\main\\resources\\Data.txt";
 
@@ -20,15 +17,10 @@ public class Main {
       students.add(student);
     }
 
-    System.out.println("Unsorted list");
-    Utils.printList(students);
-    System.out.println("-------");
-
     Collections.sort(students, new StudentComparator());
 
-    System.out.println("Sorted list");
-    Utils.printList(students);
-    System.out.println("-------");
+   System.out.println(students);
+
 
   }
 
