@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 
 public class ReadFromFile {
-    public static void main(String[] args){// throws IOException {
+    public static void main(String[] args){
         //String text;
         String s = ToArrray();
         List<String> myList = new ArrayList<String>(Arrays.asList(s.split(":")));
@@ -16,12 +16,14 @@ public class ReadFromFile {
 
     }
 
-    private static String ToArrray() {//throws FileNotFoundException {
+    private static String ToArrray() {
         Scanner scanner = null;
         try {
-            scanner = new Scanner(new File("C:\\IDEA\\V3\\src\\main\\java\\Data.txt"));
+            scanner = new Scanner(new File("src/main/java/Data.txt"));
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            System.out.println("Reading file error!");
+
         }
         String text = scanner.useDelimiter("\\A").next();
         scanner.close();
