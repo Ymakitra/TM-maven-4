@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Main {
-  private static final String path = "C:\\Users\\okurchyk\\Desktop\\TM-maven-4-master\\src\\main\\resources\\Data.txt";
+  private static final String path = "src/main/resources/Data.txt";
 
   public static void main(String[] args) {
 
