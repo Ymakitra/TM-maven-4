@@ -12,20 +12,20 @@ public class Utils {
 
   public static List<String> readLines(String fileName) {
     TM tm = new TM();
-    //List<String> lines = new ArrayList<String>();
- // try {
-
-    // File file = new File(fileName);
-    return tm.File(fileName);
-    // Scanner scanner = new Scanner(file);
-      //while (scanner.hasNext()) {
-        //lines.add(scanner.next());
-      //}
-     // scanner.close();
-   // } catch (FileNotFoundException e) {
+    
+    List<String> lines = new ArrayList<String>();
+    try {
+      File file = new File(fileName);
+      Scanner scanner = new Scanner(file);
+      while (scanner.hasNext()) {
+        lines.add(scanner.next());
+      }
+      scanner.close();
+    } catch (FileNotFoundException e) {
       //e.printStackTrace();
-  // }
-    //return lines;
+        System.out.println("Reading Data.txt error!");
+    }
+    return lines;
   }
 
   public static Student parseLine(String line) {

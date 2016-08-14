@@ -22,10 +22,11 @@ public class ReadFromFile {
     private static String ToArrray() {
         Scanner scanner = null;
         try {
-            scanner = new Scanner(new File("java/Data.txt"));
+   scanner = new Scanner(new File("src/main/resources/Data.txt"));
+
         } catch (FileNotFoundException e) {
             //e.printStackTrace();
-            System.out.println("Reading file error!");
+            System.out.println("Reading Data.txt error!");
 
         }
         String text = scanner.useDelimiter("\\A").next();
