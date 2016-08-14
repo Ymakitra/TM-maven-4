@@ -19,7 +19,8 @@ public class Utils {
       }
       scanner.close();
     } catch (FileNotFoundException e) {
-      e.printStackTrace();
+      //e.printStackTrace();
+        System.out.println("Reading Data.txt error!");
     }
     return lines;
   }
