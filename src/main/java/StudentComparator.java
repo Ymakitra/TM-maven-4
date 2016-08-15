@@ -2,9 +2,6 @@ import entity.Student;
 
 import java.util.Comparator;
 
-/**
- * Created by okurchyk on 8/9/2016.
- */
 public class StudentComparator implements Comparator<Student> {
   public int compare(Student student1, Student student2) {
     String lastName1 = student1.getLastName();

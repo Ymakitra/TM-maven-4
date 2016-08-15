@@ -1,8 +1,5 @@
 import entity.Student;
 
-
-
-
 import java.util.*;
 
 public class Main {
@@ -26,11 +23,6 @@ public class Main {
     }
 
     Utils.printList(students);
-
-
-
-
-    //System.out.println(students);
 
 
   }
