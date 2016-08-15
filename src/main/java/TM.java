@@ -18,7 +18,7 @@ public class TM {
             scanner.close();
         } catch (FileNotFoundException e) {
             //e.printStackTrace();
-            System.out.println("Reading file error!");
+            System.out.println("Reading Data.txt error!");
         }
        // String text = scanner.
                 //useDelimiter("\\A").next();
